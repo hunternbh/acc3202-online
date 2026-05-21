@@ -70,6 +70,41 @@ const tabs = [
     }
   },
   {
+    id: "lesson-3-tab-bpmn-practice",
+    title: "BPMN Diagram Practice",
+    kind: "text",
+    paragraphs: [
+      "Now it is your turn to practice business process modeling! We will use draw.io, the simplest and most powerful free diagramming tool available.",
+      "To access the tool, open your browser and go to draw.io (which redirects to app.diagrams.net). Once loaded, select 'Create New Diagram', choose 'Blank Diagram', and click 'Create'. You can choose to save it to your local device or link it to Google Drive.",
+      "On the left-hand sidebar, search for 'BPMN' shapes or click '+ More Shapes' at the bottom of the sidebar, check the 'BPMN' box, and click 'Apply'. This will give you standard BPMN process elements (events, activities, gateways) to drag and drop.",
+      "Scenario: University Library Book Borrowing System",
+      "Background: The university wants to automate the process of students borrowing books from the campus library. Right now, everything is done manually, and it often causes delays.",
+      "Process Description:\n1. Start Event: A student requests to borrow a book.\n2. Task 1 – Search Availability: The system (or librarian) checks if the requested book is available in the catalog.\n   Gateway: Is the book available? Yes → Continue; No → End Event (“Book not available”)\n3. Task 2 – Check Borrower Status: Confirm that the student has no overdue books or unpaid fines.\n   Gateway: Is the student eligible? Yes → Continue; No → End Event (“Borrowing request denied”)\n4. Task 3 – Register Borrowing: The librarian issues the book and updates the system.\n5. Task 4 – Notify Student: Send an email/SMS confirmation with due date.\n6. Intermediate Timer Event: Wait until the due date.\n7. Task 5 – Return Book: Student returns the book.\n   Gateway: Was the book returned on time? Yes → End Event (“Book returned successfully”); No → Task 6 – Apply Fine → End Event (“Fine imposed”)"
+    ],
+    points: [
+      "Visit draw.io (app.diagrams.net) to start a blank diagram.",
+      "Enable BPMN shapes in the left sidebar to drag events, tasks, and gateways.",
+      "Follow the 7-step process description chronologically.",
+      "Use diamonds (gateways) to split the flow based on decisions and conditions."
+    ]
+  },
+  {
+    id: "lesson-3-tab-bpmn-answer",
+    title: "BPMN Exercise Answer",
+    kind: "text",
+    imageUrl: "./assets/bpmn-exercises-answer.jpeg",
+    imageAlt: "BPMN Exercise Answer Diagram",
+    paragraphs: [
+      "Examine the correct BPMN diagram below carefully. It illustrates the complete automated library book borrowing system process flow, showing all events, tasks, gateways, and intermediate timer events.",
+      "Compare this workflow diagram against the model you created in draw.io. Pay close attention to how the decision pathways split at each gateway and how the intermediate timer event represents waiting until the due date."
+    ],
+    points: [
+      "Compare your model against the official solution below.",
+      "Ensure you have three gateways for: availability check, eligibility check, and timely return check.",
+      "Verify the intermediate timer event symbol is used to represent the wait period."
+    ]
+  },
+  {
     id: "lesson-3-tab-4",
     title: "Data Modeling & History",
     kind: "text",
