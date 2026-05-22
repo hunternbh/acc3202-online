@@ -14,7 +14,7 @@ const tabs = [
     id: "lesson-1-tab-1",
     title: "Learning Joyfully and Committing Yourself to This Class",
     kind: "video",
-    embedUrl: "https://youtube.com/embed/zqnUAns80EI",
+    embedUrl: "https://youtube.com/embed/FLQJ6y5M9_0",
     videoTitle: "Lesson 1 opening video",
     copy: "In this video, Hunter shares about what it means to be in control of your mind, body, emotions and energy.",
     points: [
