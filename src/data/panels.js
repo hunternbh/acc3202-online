@@ -1,6 +1,5 @@
 // Edit these four objects to change the carousel cards and top panel titles.
-export const heroImage =
-  "https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=1800&q=80";
+export const heroImage = "./assets/background.png";
 
 export const panels = [
   {
@@ -8,7 +7,7 @@ export const panels = [
     title: "Lesson 1",
     category: "Lesson 1 June 8th",
     summary: "Learning Joyfully and Committing to the Class",
-    image: "/assets/carousel/panel-00-learning-joyfully.png",
+    image: "./assets/carousel/panel-00-learning-joyfully.png",
     imageAlt: "Learner exploring a bright accounting lesson interface"
   },
   {
@@ -16,7 +15,7 @@ export const panels = [
     title: "Lesson 2",
     category: "Lesson 2 June 10th",
     summary: "What is AIS? How does a POS system work?",
-    image: "/assets/carousel/panel-01-what-is-ais.png",
+    image: "./assets/carousel/panel-01-what-is-ais.png",
     imageAlt: "Visual explanation of an accounting information system"
   },
   {
@@ -24,7 +23,7 @@ export const panels = [
     title: "Lesson 3",
     category: "Lesson 3 June 15th",
     summary: "Accountants as Business Analysts, BPMN",
-    image: "/assets/carousel/panel-02-business-analysts.png",
+    image: "./assets/carousel/panel-02-business-analysts.png",
     imageAlt: "Business analysts working with accounting data"
   },
   {
@@ -32,7 +31,7 @@ export const panels = [
     title: "Lesson 4",
     category: "Lesson 4 June 17th",
     summary: "BPMN and Data Modelling SQL",
-    image: "/assets/carousel/panel-03-data-modelling.png",
+    image: "./assets/carousel/panel-03-data-modelling.png",
     imageAlt: "Data modelling visual for an accounting course"
   }
 ];
