@@ -14,7 +14,7 @@ const tabs = [
     id: "lesson-3-tab-1",
     title: "Accountants as Business Analysts",
     kind: "video",
-    embedUrl: "https://www.youtube.com/embed/EOsmTWCL0gA",
+    embedUrl: "https://www.youtube.com/embed/29-IQsFH6Wo",
     videoTitle: "Lesson 3 opening video",
     copy: "Begin Lesson 3 by watching the video. Please commit to an uninterrupted lesson of 30 to 40 minutes, keep away all distractions, and declare your commitment.",
     points: [

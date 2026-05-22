@@ -12,21 +12,16 @@ defineProps({
 const tabs = [
   {
     id: "lesson-2-tab-1",
-    title: "Opening video",
+    title: "Accountants as Business Analysts",
     kind: "video",
-    embedUrl: "https://www.youtube.com/embed/cXofWCODnAg",
+    embedUrl: "https://www.youtube.com/embed/6G-Ct4HHRKc",
     videoTitle: "Lesson 2 opening video",
     copy: "Begin Lesson 2 with the course video. Watch with your distractions set aside, then use the reading tabs to connect accounting foundations, systems thinking, and AIS career pathways.",
     points: [
       "Listen for the three accounting foundations named in the video.",
       "Notice how the restaurant POS example turns a simple card tap into a system story.",
       "Keep the career and certification examples in mind for the Brightspace questions."
-    ],
-    quiz: {
-      prompt: "The video asks you to start the lesson by learning with:",
-      choices: ["Focused attention", "More distractions", "A hidden login"],
-      answer: 0
-    }
+    ]
   },
   {
     id: "lesson-2-tab-2",

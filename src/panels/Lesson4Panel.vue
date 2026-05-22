@@ -12,21 +12,15 @@ defineProps({
 const tabs = [
   {
     id: "lesson-4-tab-1",
-    title: "Opening Video",
+    title: "UML and SQL Foundations",
     kind: "video",
-    embedUrl: "https://www.youtube.com/embed/VCBdGKBXz4Y",
+    embedUrl: "https://www.youtube.com/embed/TWa_dDCFblg",
     videoTitle: "Lesson 4 opening video",
     copy: "Begin Lesson 4 by watching the video. Please commit to 30 to 40 minutes of uninterrupted watching and learning. Put away your phones, food, and other distractions.",
     points: [
-      "Uninterrupted Attention: Say aloud: 'I will commit to 30 minutes of uninterrupted video learning.'",
       "Eliminate Distractions: Put away phones, food, and any other devices. Focus completely for this short duration.",
       "Tested Content: Remember that everything discussed since Lesson 1 will be tested in this course."
-    ],
-    quiz: {
-      prompt: "The instructor asks you to eliminate which of the following distractions during the 30-minute video?",
-      choices: ["PowerPoint slides only", "Your food and mobile phone", "The Zoom link"],
-      answer: 1
-    }
+    ]
   },
   {
     id: "lesson-4-tab-2",
@@ -170,7 +164,38 @@ const tabs = [
     }
   },
   {
-    id: "lesson-4-tab-9",
+  id: "lesson-4-tab-9",
+  title: "SQL: Asking Questions from a Database",
+  kind: "text",
+  paragraphs: [
+    "SQL stands for Structured Query Language. In simple terms, SQL is a language used to ask the database questions and work with the data inside it.",
+    "For this lesson, we will focus mainly on SELECT. SELECT is the command used to retrieve data from a database.",
+    "SELECT does not create a table. SELECT does not delete records. SELECT does not change the database. It only shows you the data you asked for.",
+    "This is why SQL is important for accountants. Accounting data is usually stored inside systems. If you want to examine customers, invoices, payments, vendors, inventory, or journal entries, you need a way to pull the data out.",
+    "The most basic SQL command starts with SELECT star FROM a table. The star means all columns. FROM tells the database which table to use.",
+    "For example, SELECT * FROM Customers means: show me all columns from the Customers table.",
+    "But in real work, you should not always pull everything. You should pull what you need. If you only need customer ID, customer name, and email, then you should select only those columns.",
+    "SQL can also filter rows using WHERE, sort results using ORDER BY, connect tables using JOIN, and summarize data using GROUP BY.",
+    "The database is not thinking. It only follows the question you ask. If your query is wrong, the output will be wrong. This is why accountants must learn to ask precise questions."
+  ],
+  points: [
+    "SQL means Structured Query Language.",
+    "The most basic SQL command is SELECT.",
+    "SELECT retrieves data but does not change the database.",
+    "SELECT * FROM Customers means show all columns from the Customers table.",
+    "WHERE filters rows.",
+    "ORDER BY sorts results.",
+    "JOIN connects tables.",
+    "GROUP BY summarizes data."
+  ],
+  quiz: {
+    prompt: "Which SQL command is used to retrieve data from a database?",
+    choices: ["SELECT", "DELETE", "CREATE"],
+    answer: 0
+  }
+},
+  {
+    id: "lesson-4-tab-10",
     title: "Brightspace Submission",
     kind: "text",
     paragraphs: [

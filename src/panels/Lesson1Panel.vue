@@ -31,7 +31,7 @@ const tabs = [
     id: "lesson-1-tab-2",
     title: "Syllabus, grading, attendance, and how the class is structured",
     kind: "text",
-    imageUrl: "./assets/syllabus.jpeg",
+    imageUrl: "./assets/syllabus.png",
     imageAlt: "Grading Components",
     paragraphs: [
     "The syllabus is subject to change, but the general structure of the class will be as follows.",
