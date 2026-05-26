@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
-defineProps({
+const props = defineProps({
   heroImage: {
     type: String,
     required: true
@@ -9,14 +9,32 @@ defineProps({
   panels: {
     type: Array,
     required: true
+  },
+  initialScrollLeft: {
+    type: Number,
+    default: 0
   }
 });
+
+const emit = defineEmits(["scroll-change"]);
 
 const courseStrip = ref(null);
 
 function scrollCarousel(direction) {
   courseStrip.value?.scrollBy({ left: direction * 340, behavior: "smooth" });
 }
+
+function handleScroll() {
+  if (courseStrip.value) {
+    emit("scroll-change", courseStrip.value.scrollLeft);
+  }
+}
+
+onMounted(() => {
+  if (courseStrip.value && props.initialScrollLeft > 0) {
+    courseStrip.value.scrollLeft = props.initialScrollLeft;
+  }
+});
 </script>
 
 <template>
@@ -37,13 +55,13 @@ function scrollCarousel(direction) {
               <button type="button" class="round-button" @click="scrollCarousel(-1)" aria-label="Previous panels">
                 <span aria-hidden="true">&lsaquo;</span>
               </button>
-              <button type="button" class="round-button" @click="scrollCarousel(1)" aria-label="Next panels">
+              <button type="button" class="round-button" @click="scrollCarousel(1)" aria-label="Next panels">   
                 <span aria-hidden="true">&rsaquo;</span>
               </button>
             </div>
           </div>
 
-          <div ref="courseStrip" class="course-strip">
+          <div ref="courseStrip" class="course-strip" @scroll.passive="handleScroll">
             <article v-for="panel in panels" :key="panel.id" class="course-card">
               <a :href="`#/panel/${panel.id}`" class="course-card-link">
                 <img :src="panel.image" :alt="panel.imageAlt" />

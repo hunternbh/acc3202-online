@@ -29,6 +29,8 @@ function readRoute() {
 }
 
 const route = ref(readRoute());
+const homeScrollLeft = ref(0);
+
 const currentPanel = computed(() => panels.find((panel) => panel.id === route.value.panelId) ?? null);
 const panelViews = {
   "lesson-1": Lesson1Panel,
@@ -77,7 +79,13 @@ onBeforeUnmount(() => window.removeEventListener("hashchange", onHashChange));
   </header>
 
   <main>
-    <HomeView v-if="route.name === 'home'" :hero-image="heroImage" :panels="panels" />
+    <HomeView
+      v-if="route.name === 'home'"
+      :hero-image="heroImage"
+      :panels="panels"
+      :initial-scroll-left="homeScrollLeft"
+      @scroll-change="(val) => homeScrollLeft = val"
+    />
     <component :is="currentPanelView" v-else-if="currentPanel && currentPanelView" :panel-title="currentPanel.title" />
 
     <section v-else class="not-found">
