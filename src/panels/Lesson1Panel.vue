@@ -43,7 +43,7 @@ const tabs = [
     "There are two quizzes, worth 5% each, for a total of 10%. These quizzes will be hardcopy and held in class.",
     "Individual Project 1, which focuses on SQL commands, is worth 8%. Individual Project 2, which focuses on vibe coding, is worth 8%. Individual Project 3 is also worth 8%. These projects are meant to give you hands-on practice, not just theory.",
     "The AGILE group project is worth 9%. You need to be physically present and on time for the group project class to receive credit, unless you have made arrangements with me in advance.",
-    "There may also be bonus opportunities, including the Kaggle irrigation data analytics project and the ticketing bot internal-controls exercise. These are bonus credits and should not be treated as replacements for the main course requirements.",
+    "There may also be bonus opportunities, including the Kaggle irrigation data analytics project. These are bonus credits and should not be treated as replacements for the main course requirements.",
     "The grading curve depends on class performance and the grade distribution standards for 3000-level accounting courses. Your final grade may depend on your relative position in class, not only your raw percentage. If you do not agree with this, you should consider taking another instructor's section."
 ],
   },
