@@ -36,82 +36,82 @@ export const panels = [
   },
   {
     id: "lesson-5",
-    title: "Lesson 5: SQL Foundations",
+    title: "Lesson 5: Under construction",
     category: "Lesson 5 June 22nd 2026",
-    summary: "Mastering Structured Query Language for Accounting Data",
+    summary: "Under construction",
     image: "./assets/carousel/panel-00-learning-joyfully.png",
-    imageAlt: "SQL coding interface placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-6",
-    title: "Lesson 6: XBRL and Tagging",
+    title: "Lesson 6: Under construction",
     category: "Lesson 6 June 24th 2026",
-    summary: "The Language of Financial Reporting and Digital Tagging",
+    summary: "Under construction",
     image: "./assets/carousel/panel-01-what-is-ais.png",
-    imageAlt: "XBRL data tagging concept placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-7",
-    title: "Lesson 7: AIS and Internal Controls",
+    title: "Lesson 7: Under construction",
     category: "Lesson 7 June 29th 2026",
-    summary: "Protecting Organizational Assets through System Controls",
+    summary: "Under construction",
     image: "./assets/carousel/panel-02-business-analysts.png",
-    imageAlt: "Internal controls and risk management placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-8",
-    title: "Lesson 8: COSO, COBIT, NIST",
+    title: "Lesson 8: Under construction",
     category: "Lesson 8 July 1st 2026",
-    summary: "Navigating Industry Standards and Control Frameworks",
+    summary: "Under construction",
     image: "./assets/carousel/panel-03-data-modelling.png",
-    imageAlt: "Framework diagrams placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-9",
-    title: "Lesson 9: Encryption and Decryption",
+    title: "Lesson 9: Under construction",
     category: "Lesson 9 July 6th 2026",
-    summary: "Securing Data Integrity in the Digital Age",
+    summary: "Under construction",
     image: "./assets/carousel/panel-00-learning-joyfully.png",
-    imageAlt: "Data security and encryption placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-10",
-    title: "Lesson 10: File Structure and AI Foundations",
+    title: "Lesson 10: Under construction",
     category: "Lesson 10 July 8th 2026",
-    summary: "Understanding Data Storage and the Basics of Artificial Intelligence",
+    summary: "Under construction",
     image: "./assets/carousel/panel-01-what-is-ais.png",
-    imageAlt: "AI and data structure placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-11",
-    title: "Lesson 11: Prompt Engineering and Chatbots",
+    title: "Lesson 11: Under construction",
     category: "Lesson 11 July 13th 2026",
-    summary: "Talking to Chatbots and Guarding Against Deepfakes",
+    summary: "Under construction",
     image: "./assets/carousel/panel-02-business-analysts.png",
-    imageAlt: "AI chatbot interaction placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-12",
-    title: "Lesson 12: GPUs and Becoming AI",
+    title: "Lesson 12: Under construction",
     category: "Lesson 12 July 15th 2026",
-    summary: "The Hardware of AI and the Future of Human-AI Collaboration",
+    summary: "Under construction",
     image: "./assets/carousel/panel-03-data-modelling.png",
-    imageAlt: "GPU hardware and AI future placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-13",
-    title: "Lesson 13: Excel Basics and Data Cleaning",
+    title: "Lesson 13: Under construction",
     category: "Lesson 13 July 20th 2026",
-    summary: "Old School Essentials: Preparing Data for Analysis",
+    summary: "Under construction",
     image: "./assets/carousel/panel-00-learning-joyfully.png",
-    imageAlt: "Excel spreadsheet and data cleaning placeholder"
+    imageAlt: "Under construction"
   },
   {
     id: "lesson-14",
-    title: "Lesson 14: Review & Final Reminders",
+    title: "Lesson 14: Under construction",
     category: "Lesson 14 July 22nd 2026",
-    summary: "Midterm Preparation and Project Deadlines",
+    summary: "Under construction",
     image: "./assets/carousel/panel-01-what-is-ais.png",
-    imageAlt: "Calendar and checklist placeholder"
+    imageAlt: "Under construction"
   }
 ];
