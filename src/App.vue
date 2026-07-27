@@ -7,15 +7,6 @@ import Lesson2Panel from "./panels/Lesson2Panel.vue";
 import Lesson3Panel from "./panels/Lesson3Panel.vue";
 import Lesson4Panel from "./panels/Lesson4Panel.vue";
 import Lesson5Panel from "./panels/Lesson5Panel.vue";
-import Lesson6Panel from "./panels/Lesson6Panel.vue";
-import Lesson7Panel from "./panels/Lesson7Panel.vue";
-import Lesson8Panel from "./panels/Lesson8Panel.vue";
-import Lesson9Panel from "./panels/Lesson9Panel.vue";
-import Lesson10Panel from "./panels/Lesson10Panel.vue";
-import Lesson11Panel from "./panels/Lesson11Panel.vue";
-import Lesson12Panel from "./panels/Lesson12Panel.vue";
-import Lesson13Panel from "./panels/Lesson13Panel.vue";
-import Lesson14Panel from "./panels/Lesson14Panel.vue";
 
 function readRoute() {
   const hash = window.location.hash.replace(/^#\/?/, "");
@@ -37,16 +28,7 @@ const panelViews = {
   "lesson-2": Lesson2Panel,
   "lesson-3": Lesson3Panel,
   "lesson-4": Lesson4Panel,
-  "lesson-5": Lesson5Panel,
-  "lesson-6": Lesson6Panel,
-  "lesson-7": Lesson7Panel,
-  "lesson-8": Lesson8Panel,
-  "lesson-9": Lesson9Panel,
-  "lesson-10": Lesson10Panel,
-  "lesson-11": Lesson11Panel,
-  "lesson-12": Lesson12Panel,
-  "lesson-13": Lesson13Panel,
-  "lesson-14": Lesson14Panel
+  "lesson-5": Lesson5Panel
 };
 const currentPanelView = computed(() => panelViews[route.value.panelId] ?? null);
 
@@ -90,7 +72,7 @@ onBeforeUnmount(() => window.removeEventListener("hashchange", onHashChange));
 
     <section v-else class="not-found">
       <h1>Panel not found</h1>
-      <p>The panel link does not match Lesson 1 to Lesson 14.</p>
+      <p>The panel link does not match Lesson 1 to Lesson 5.</p>
       <a href="#/">Return to main</a>
     </section>
   </main>
