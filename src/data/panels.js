@@ -36,8 +36,8 @@ export const panels = [
   },
   {
     id: "lesson-5",
-    title: "Lesson 5",
-    category: "Lesson 5 June 22nd 2026",
+    title: "Extra Lesson",
+    category: "Extra Lesson 3rd Aug 2026",
     summary: "Projects Review, Grading, and Course Progress",
     image: "./assets/carousel/panel-04-relational-dbs-sql.png",
     imageAlt: "Relational database and SQL concepts"
