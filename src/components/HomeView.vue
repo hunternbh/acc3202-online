@@ -2,10 +2,6 @@
 import { onMounted, ref } from "vue";
 
 const props = defineProps({
-  heroImage: {
-    type: String,
-    required: true
-  },
   panels: {
     type: Array,
     required: true
@@ -39,10 +35,7 @@ onMounted(() => {
 
 <template>
   <section class="home-page">
-    <section
-      class="home-hero"
-      :style="{ backgroundImage: `linear-gradient(rgba(13, 30, 44, 0.56), rgba(13, 30, 44, 0.68)), url(${heroImage})` }"
-    >
+    <section class="home-hero">
       <div class="hero-content">
         <p class="eyebrow">Hunter Ng</p>
         <h1>ACC3202</h1>

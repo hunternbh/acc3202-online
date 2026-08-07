@@ -1,7 +1,7 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import HomeView from "./components/HomeView.vue";
-import { heroImage, panels } from "./data/panels";
+import { panels } from "./data/panels";
 import Lesson1Panel from "./panels/Lesson1Panel.vue";
 import Lesson2Panel from "./panels/Lesson2Panel.vue";
 import Lesson3Panel from "./panels/Lesson3Panel.vue";
@@ -44,9 +44,8 @@ onBeforeUnmount(() => window.removeEventListener("hashchange", onHashChange));
 <template>
   <header class="topbar" :class="{ 'panel-topbar': currentPanel }">
     <template v-if="!currentPanel">
-      <a class="brand" href="#/" aria-label="ACC3202 Hunter Ng MOOC home">
-        <span class="brand-icon" aria-hidden="true">A</span>
-        <span>ACC3202 Hunter Ng MOOC</span>
+      <a class="brand" href="#/" aria-label="ACC3202 Hunter Ng home">
+        <span>ACC3202 Hunter Ng</span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
@@ -63,7 +62,6 @@ onBeforeUnmount(() => window.removeEventListener("hashchange", onHashChange));
   <main>
     <HomeView
       v-if="route.name === 'home'"
-      :hero-image="heroImage"
       :panels="panels"
       :initial-scroll-left="homeScrollLeft"
       @scroll-change="(val) => homeScrollLeft = val"

@@ -47,7 +47,7 @@ input {
   min-height: 72px;
   padding: 0 28px;
   color: #fff;
-  background: var(--blue);
+  background: #000;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.26) inset;
 }
 
@@ -88,16 +88,6 @@ input {
   min-width: 224px;
   font-weight: 800;
   text-decoration: none;
-}
-
-.brand-icon {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  place-items: center;
-  border: 2px solid rgba(255, 255, 255, 0.82);
-  border-radius: 8px;
-  font-size: 15px;
 }
 
 .main-nav {
@@ -151,8 +141,7 @@ input {
 .home-hero {
   min-height: calc(100vh - 72px);
   padding: 64px 34px 52px;
-  background-position: center;
-  background-size: cover;
+  background: #000;
 }
 
 .hero-content {
